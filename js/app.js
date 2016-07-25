@@ -10,7 +10,15 @@ $(function() {
 	}).blur(function(){
 	   $(this).attr('placeholder',$(this).data('placeholder'));
 	});
-	
+
+
+    //menu li active
+
+    $(' ul#menu li a').on('click', function(){
+        $('ul#menu li ').addClass('active').siblings().removeClass('active');
+    });
+
+
 	 // Popover
     $('[data-popup="popover"]').popover();
 

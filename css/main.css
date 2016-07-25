@@ -17,7 +17,10 @@ a:focus, a:hover {color: #EF5350;text-decoration: none;}
 
 
 /* Main navbar */
-
+.tagsTable{border: none;border-radius: none;}
+.tagsTable .table-striped{}
+.tagsTable thead{background: #AD1457;}
+.tagsTable thead th{color: #fff;}
 @media (min-width: 769px){
 	.navbar-header{min-width:240px}
 }

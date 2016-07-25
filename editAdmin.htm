@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LNP</title>
+	<link href="images/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="images/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="images/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="images/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="images/favicon.ico" rel="icon" type="image/png">
+	<link href="images/favicon.ico" rel="shortcut icon">
+
+	<!-- Global stylesheets -->
+	<link href="css/fonts.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css"rel="stylesheet" type="text/css">
+	<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-extended.css" rel="stylesheet" type="text/css">
+	<link href="css/plugins.css" rel="stylesheet" type="text/css">
+	<link href="css/color-system.css" rel="stylesheet" type="text/css">
+	<link href="css/media.css" rel="stylesheet" type="text/css">
+	<link href="css/weather-icons.min.css" rel="stylesheet" type="text/css">
+	<link type="text/css" rel="stylesheet" href="index.htm" id="style">
+	<link type="text/css" rel="stylesheet" href="index.htm" id="theme">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/js-v=3.exp.js"></script>
+	<script src="js/jsapi.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/c3.min.js"></script>
+	<script src="js/c3_bars_pies.js"></script>
+	<script src="js/jvectormap.min.js"></script>
+	<script src="js/world.js"></script>
+	<script src="js/dashboard.js"></script>
+	<script src="js/symbols_custom.js"></script>
+</head>
+<body>
+<!-- Main navbar -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-header">
+		<a class="sidebar-mobile-toggle visible-xs"><i class="fa fa-ellipsis-v"></i></a>
+		<a class="navbar-brand" href="index.htm">LNP Solutions Tracker</a>
+	</div>
+	<ul class="navbar-right">
+		<li class="dropdown profile">
+			<a class="dropdown-toggle" data-toggle="dropdown">
+				<i class="fa fa-user"></i>
+			</a>
+			<div class="dropdown-menu">
+				<ul class="">
+					<li><a href="changePassword.htm"><i class="fa fa-user"></i>Change Password</a></li>
+					<li><a href="settings.htm"><i class="fa fa-cogs"></i>Settings</a></li>
+					<li><a href="login.htm"><i class="fa fa-sign-out"></i>Log out</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- /main navbar -->
+
+<!-- Page container -->
+<div class="page-container" style="min-height:700px">
+
+	<!-- Page content -->
+	<div class="page-content"><!-- Main sidebar -->
+		<div class="sidebar sidebar-main hidden-xs">
+			<div class="sidebar-content">
+				<!-- Main navigation -->
+				<div class="sidebar-category sidebar-category-visible">
+					<div class="category-content no-padding">
+						<ul class="navigation navigation-main navigation-accordion" id="menu">
+							<!-- Main -->
+							<li>
+								<a href="index.htm"><i class="fa fa-desktop"></i> <span>Dashboard</span></a>
+							</li>
+							<!-- /Main -->
+							<!-- Content -->
+							<li>
+								<a href="#"><i class="fa fa-users"></i> <span>Users</span></a>
+								<ul>
+									<li><a href="addDriver.htm">Add Drivers</a></li>
+									<li><a href="addAdmin.htm">Add Web Admin</a></li>
+									<li><a href="editDriver.htm">View/Edit Drivers</a></li>
+									<li><a href="editAdmin.htm">View/Edit Web Admin</a></li>
+								</ul>
+							</li>
+							<li><a href="tags.htm"><i class="fa fa-tags"></i> <span>Tags</span></a></li>
+							<li><a href="logs.htm"><i class="fa fa-sign-language"></i> <span>Logs</span></a></li>
+							<!-- /Content -->
+						</ul>
+					</div>
+				</div>
+				<!-- /main navigation -->
+			</div>
+		</div>
+		<!-- /main sidebar -->
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content">
+					<div class="page-title">
+						<h4><i class="fa fa-home position-left"></i> <span>Web Admins</span></h4>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+			<div class="content">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="panel panel-flat bg-info-600 no-margin">
+							<div class="panel-heading">
+								<h5 class="panel-title text-uppercase pb-10"><i class="fa fa-edit"></i> Edit Web Admins</h5>
+							</div>
+						</div>
+						<div class="panel panel-flat p-20">
+							<div class="table-responsive">
+								<table class="table table-condensed table-striped">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Username</th>
+											<th>Current Permission</th>
+											<th>Change Permission To</th>
+											<th>Current status</th>
+											<th>Change Status To</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!--start row-->
+										<tr>
+											<td>1</td>
+											<td>wasiqgh</td>
+											<td>Admin</td>
+											<td>
+												<button class="btn bg-info-600" type="submit">Make general user</button>
+												<!--<button class="btn bg-info-600" type="submit">Make Admin</button>-->
+											</td>
+											<td>Active</td>
+											<td><button class="btn bg-danger-600" type="submit"><i class="fa fa-close"></i>Delete</button></td>
+										</tr>
+										<!--close row-->
+
+										<!--start row-->
+										<tr>
+											<td>2</td>
+											<td>admin</td>
+											<td>Admin</td>
+											<td>
+												<button class="btn bg-info-600" type="submit">Make general user</button>
+												<!--<button class="btn bg-info-600" type="submit">Make Admin</button>-->
+											</td>
+											<td>Active</td>
+											<td><button class="btn bg-danger-600" type="submit"><i class="fa fa-close"></i>Delete</button></td>
+										</tr>
+										<!--close row-->
+
+
+									</tbody>
+								</table>
+						</div>
+					</div>
+
+				</div>
+
+
+				<!-- Footer -->
+				<div class="footer pt-20">
+					&copy; Powered by  <a href="">Eunoia I.T Solutions</a>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /content area -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</div>
+
+
+<!-- /page container -->
+</body>
+</html>
