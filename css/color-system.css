@@ -4,6 +4,13 @@ Bootstrap colors
 
 /*Primary color system*/
 
+
+
+.bg-green{background-color:#07840C;border-color:#07840C;color:#fff}
+.bg-green-800{background-color:#4AA34F;border-color:#4AA34F;color:#fff;}
+.bg-green-900{background-color:#29932E;border-color:#29932E;color:#fff}
+
+
 .bg-primary{background-color:#2196F3;border-color:#2196F3;color:#fff}
 .bg-primary-300{background-color:#64B5F6;border-color:#64B5F6;color:#fff}
 .bg-primary-400{background-color:#42A5F5;border-color:#42A5F5;color:#fff}
