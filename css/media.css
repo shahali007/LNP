@@ -1,6 +1,11 @@
 @media(max-width:414px){
 	.content {padding: 0 10px 60px}
 	.sidebar-main+.page-header {margin: 10px 0 20px;}
+	.sidebar-main {
+		z-index: 99;
+		width: 100%;
+		position: fixed;
+	}
 	.page-header-content {position: relative;background-color: inherit;padding: 0 10px;}
 	.page-title, .page-title h4 {font-size: 18px;padding: 1px 0 0 0;}
 	.h1.panel-title, h1.panel-title {font-size: 10px;}
@@ -25,4 +30,13 @@
 	.navbar-right a i{margin-top:0px;}
 	.content-wrapper{display:block;}
 	.page-title{padding: 10px 10px 10px 0;}
+	.sidebar-main {
+		z-index: 99;
+		width: 100%;
+		position: fixed;
+	}
+	.navbar .dropdown .dropdown-menu {
+		right: 0!important;
+		left: inherit;
+	}
 }

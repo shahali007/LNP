@@ -21,6 +21,11 @@ a:focus, a:hover {color: #07840C;text-decoration: none;}
 	margin-bottom:300px;
 }
 
+.dropdown-menu {
+    right: 0;
+    left: none;
+}
+
 .tagsTable{border: none;border-radius: 0;}
 .tagsTable .table-striped{}
 .tagsTable thead{background: #07840C;}
